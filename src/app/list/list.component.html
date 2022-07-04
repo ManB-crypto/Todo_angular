@@ -1,0 +1,22 @@
+<div class="senter">
+<header class="tilesWrap" style="overflow:hidden;">
+<textarea type="text" placeholder="Enter list" [(ngModel)]="newtodo"></textarea>
+<button  (click)="savetodo()">add</button></header></div>
+
+
+
+
+
+<div class="center">
+<div *ngFor="let todo of list; let i=index;" class="tilesWrap">
+        <li>
+            <h2  class="id">{{i+1}}</h2>
+            <h3>{{todo.title}}</h3>
+            <p class="content">
+                {{todo.content}}
+            </p>
+           
+            <button (click)="deletetodo(i)">Remove</button>
+    
+        </li>     
+   </div></div>

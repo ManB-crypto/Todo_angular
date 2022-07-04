@@ -1,0 +1,149 @@
+
+.tilesWrap.id{
+	flex: 1 1 50px;
+}
+.tilesWrap.done .content{
+	text-decoration: line-through;
+}
+textarea{
+	color:white;;
+	border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;   
+	width: 100%;
+	height: 100%;
+	border-color: Transparent; 
+	background: transparent;
+}
+.tilesWrap {
+	position: relative;
+	top:40%;
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: left;
+	
+}
+.tilesWrap h2 {
+	overflow: hidden;
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.tilesWrap h3 {
+	overflow: hidden;
+	font-size: 20px;
+	color: #b7b7b7;
+	margin-bottom: 5px;
+}
+.tilesWrap p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.tilesWrap .content {	overflow: hidden; }
+.tilesWrap button {
+	background: transparent;
+	border: 1px solid #b7b7b7;
+	padding: 10px 20px;
+	color: #b7b7b7;
+	border-radius: 3px;
+	position: absolute;
+	bottom:10px;
+	right:0px ;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-40px);
+	opacity: 0;
+	overflow: hidden;
+}
+.tilesWrap button:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 120%;
+	background: #b7b7b7;
+	top: 0;
+	opacity: 0;
+	left: -140px;
+	border-radius: 0 20px 20px 0;
+
+	transition: all 0.3s ease-in-out;
+	
+}
+.senter .tilesWrap button{
+	background-color:green;
+
+}
+.tilesWrap:hover button {
+	transform: translateY(5px);
+	opacity: 1;
+}
+.tilesWrap button:hover {
+	color: #262a2b;
+}
+.tilesWrap button:hover:before {
+	left: 0;
+	opacity: 1;
+}
+.tilesWrap:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.tilesWrap:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+.tilesWrap:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.tilesWrap:before {
+	background: #c21500;
+background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+background: linear-gradient(to right, #ffc500, #c21500);
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+	border: 3px solid rgb(255, 0, 0);
+	padding: 10px;
+  }
+  .senter {
+	margin: auto;
+	width: 15%;
+
+
+  }
